@@ -1,0 +1,28 @@
+{
+  "doctype": "DocType",
+  "name": "Project Freight Trucking",
+  "module": "Projects",
+  "custom": 0,
+  "istable": 1,
+  "is_submittable": 0,
+  "autoname": "",
+  "editable_grid": 1,
+  "track_changes": 1,
+  "fields": [
+    {"fieldname": "trucking_vendor", "label": "Trucking Vendor", "fieldtype": "Link", "options": "Supplier"},
+    {"fieldname": "plate_no", "label": "Plate No", "fieldtype": "Data"},
+    {"fieldname": "driver_name", "label": "Driver Name", "fieldtype": "Data"},
+    {"fieldname": "driver_phone", "label": "Driver Phone", "fieldtype": "Data"},
+    {"fieldname": "pickup_address", "label": "Pickup Address", "fieldtype": "Small Text"},
+    {"fieldname": "delivery_address", "label": "Delivery Address", "fieldtype": "Small Text"},
+    {"fieldname": "pickup_datetime", "label": "Pickup Datetime", "fieldtype": "Datetime"},
+    {"fieldname": "delivery_datetime", "label": "Delivery Datetime", "fieldtype": "Datetime"},
+    {"fieldname": "route_from", "label": "Route From", "fieldtype": "Data"},
+    {"fieldname": "route_to", "label": "Route To", "fieldtype": "Data"},
+    {"fieldname": "trucking_status", "label": "Trucking Status", "fieldtype": "Select", "options": "Scheduled\nIn Transit\nDelivered\nIssue"}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "Projects User", "read": 1, "write": 1, "create": 1}
+  ]
+}

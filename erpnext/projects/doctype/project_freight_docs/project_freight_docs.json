@@ -1,0 +1,22 @@
+{
+  "doctype": "DocType",
+  "name": "Project Freight Docs",
+  "module": "Projects",
+  "custom": 0,
+  "istable": 1,
+  "is_submittable": 0,
+  "autoname": "",
+  "editable_grid": 1,
+  "track_changes": 1,
+  "fields": [
+    {"fieldname": "doc_type", "label": "Doc Type", "fieldtype": "Select", "options": "MBL\nHBL\nAWB\nInvoice\nPacking List\nCOO\nInsurance\nOthers"},
+    {"fieldname": "file", "label": "File", "fieldtype": "Attach"},
+    {"fieldname": "issued_date", "label": "Issued Date", "fieldtype": "Date"},
+    {"fieldname": "expiry_date", "label": "Expiry Date", "fieldtype": "Date"},
+    {"fieldname": "notes", "label": "Notes", "fieldtype": "Small Text"}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "Projects User", "read": 1, "write": 1, "create": 1}
+  ]
+}
